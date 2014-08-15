@@ -1,7 +1,7 @@
 yandexmailregister
 ==================
 
-Registering yandex.com using python and splinter.
+Registering yandex.com mail using python and splinter.
 
 For work you need antigate.com user key. Put it into file antigate.txt
 
