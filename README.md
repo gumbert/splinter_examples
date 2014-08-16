@@ -5,6 +5,7 @@
 Пример использования firefox драйвера с прокси. Прокси хранятся в файле proxy.txt в формате ip:port Один адрес на одной строке.
 
 *Используйте эти скрипты на свой страх и риск. Скрипты предоставляются "как есть" без каких либо гарантий.*
+
 -------------------------------------------------------------
 ##mail_yandex.com
 Use splinter for registering mail in yandex.com. For work you need antigate.com user key. Put it into file antigate.txt Result saves to file.
