@@ -62,7 +62,7 @@ def main():
         
         browser.find_by_id("hint_answer").fill(firstname)
         
-        gateimgcode = "sgasafgdffff" #captcha(browser)
+        gateimgcode = captcha(browser)
         browser.find_by_id('answer').fill(gateimgcode)
         
         browser.find_by_css("button[type=\"submit\"]").click()
@@ -74,8 +74,6 @@ def main():
             browser.is_element_not_present_by_css("div.control__error__captcha_incorrect", wait_time=2)          
             if browser.is_text_present("characters were entered incorrectly"):
                 print "captcha code is bad, try again"
-                password = password_generator.generate()
-                print "password:", password
 
                 browser.find_by_id('password').fill(password)
                 browser.find_by_id('password_confirm').fill(password)
